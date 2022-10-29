@@ -107,3 +107,8 @@ thanks all person that
 thanks to everyone involved on tool and all 
 
 thanks https://dualbootfun.github.io/dualboot/index.html that was that gave me the idea to dualboot my iphone 
+
+something that if a person know to fix please tell us how : 
+1: taurine edit to jump amfi because is already patched by kernel64patcher and others problem 
+2: each time that you boot both your first system or your second system elimineted the others preboot directories of the other system
+
