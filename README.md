@@ -34,9 +34,13 @@ download https://github.com/verygenericname/SSHRD_Script and boot your device wi
 4 : The root filesystem is always the largest file with a ".dmg" extension. The two smaller .dmg files are the update and restore ramdisks. It should be noted that rootfs names across different iOS versions vary.
 so in your mac execute "asr -source xxx.xxxxx.xxx.dmg -target out.dmg --embed -erase -noprompt --chunkchecksum --puppetstrings"
 the result of that will be out.dmg that you will copy into /mnt8 for ssh execute "scp -P 2222 out.dmg root@localhost:/mnt8". 
-after execute "cp -av /mnt2/keybags /mnt9/" and "cp -av /mnt8/private/var/* /mnt9/"
 
 5: reboot your device and execute sshrd.sh boot to boot ssh ramdisk after that execute in your iphone with ssh "/System/Library/Filesystems/apfs.fs/apfs_invert -d /dev/disk0s1 -s 8 -n out.dmg" change 8 with your systemb partition.
+
+
+execute "cp -av /mnt2/keybags /mnt9/" and "cp -av /mnt8/private/var/* /mnt9/"
+
+
 
 pathing boot
 6: img4 -i iBSS.* -o iBSS.dec -k iv_key, img4 -i iBEC.* -o iBEC.dec -k iv_key
